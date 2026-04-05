@@ -14,13 +14,12 @@ class TrayIcon(QObject):
         self._icon = QSystemTrayIcon(QIcon(icon_path), app)
         self._icon.setToolTip("Autoreader — idle")
         self._menu = QMenu()
-        self._build_menu()
-        self._icon.setContextMenu(self._menu)
-        self._icon.show()
-
         self._pause_action: QAction | None = None
         self._resume_action: QAction | None = None
         self._stop_action: QAction | None = None
+        self._build_menu()
+        self._icon.setContextMenu(self._menu)
+        self._icon.show()
 
     def _build_menu(self):
         self._pause_action = self._menu.addAction("Pause")
