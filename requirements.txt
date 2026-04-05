@@ -1,0 +1,12 @@
+PyQt6>=6.6.0
+kokoro-onnx>=0.4.0
+edge-tts>=6.1.9
+openai>=1.30.0
+elevenlabs>=1.2.0
+sounddevice>=0.4.6
+soundfile>=0.12.1
+keyboard>=0.13.5
+pywin32>=306
+cryptography>=42.0.0
+numpy>=1.26.0
+requests>=2.31.0
